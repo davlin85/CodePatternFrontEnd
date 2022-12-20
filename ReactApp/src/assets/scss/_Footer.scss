@@ -1,0 +1,38 @@
+#footer {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  background-color: #e6e6e6ec;
+  border-top: 2px solid #dad8d8;
+  height: 100px;
+  .footerContainer {
+    padding: 1rem;
+    text-align: center;
+    .socialmedia {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .facebook,
+      .instagram,
+      .twitter,
+      .google,
+      .linkedin {
+        padding: 0 0.5rem 0 0.5rem;
+        transition: ease-in-out 0.3s;
+      }
+    }
+    .footerText {
+      margin-top: 1.2rem;
+      font-size: 0.95rem;
+    }
+  }
+}
+
+.facebook:hover,
+.instagram:hover,
+.twitter:hover,
+.google:hover,
+.linkedin:hover {
+  cursor: pointer;
+  color: #ff7373 !important;
+  transition: ease-in-out 0.3s;
+}

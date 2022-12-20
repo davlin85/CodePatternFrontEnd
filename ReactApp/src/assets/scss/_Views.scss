@@ -1,0 +1,22 @@
+#views {
+    min-height: calc(100vh - 325px); 
+    justify-content: center;
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    .viewsContainer {
+        min-width: 680px;
+        display: flex;
+        .categoriesContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            gap: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            .category {
+                text-align: center;
+            }
+        }
+    }
+}

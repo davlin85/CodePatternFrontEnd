@@ -1,0 +1,139 @@
+.card {
+  background-color: #e6e6e6ec;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: ease-in-out 0.3s;
+  border-radius: 0.5rem;
+  color: #2b2a2a;
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .img {
+    margin: 0;
+  }
+
+  .category {
+    font-family: $roboto-slab;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+
+  .productName {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+
+  .rating {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    color: #ff7373;
+  }
+
+  .price {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.card:hover {
+  margin-top: -1.2rem;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+  box-shadow: #32325d40 0px 50px 100px -20px, #0000004d 0px 30px 60px -30px;
+  transition: ease-in-out 0.3s;
+}
+
+.viewCard {
+  margin-bottom: 5rem;
+  display: flex;
+  background-color: #e6e6e6ec;
+  padding: 2rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  transition: ease-in-out 0.3s;
+  border-radius: 0.5rem;
+  color: #2b2a2a;
+  gap: 2rem;
+  align-items: center;
+  .img {
+    margin: 0;
+  }
+  .content {
+    .articleNumber {
+      text-align: center;
+      font-size: 0.85rem;
+    }
+    .brandName {
+      text-align: center;
+      font-family: $roboto-slab;
+      font-size: 2.7rem;
+      text-shadow: 2px 2px 2px #bdbcbc;
+    }
+    .productName {
+      text-align: center;
+      margin-top: 0.2rem;
+      margin-bottom: 1.5rem;
+    }
+    .shortDescription {
+      text-align: center;
+      font-size: 1.1rem;
+      font-style: italic;
+      margin-bottom: 1.5rem;
+    }
+    .details {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      align-items: center;
+      .item {
+        font-weight: 600;
+        .one,
+        .two,
+        .three,
+        .four,
+        .five,
+        .six,
+        .seven {
+          padding-bottom: 0.25rem;
+          margin-bottom: 0.5rem;
+          border-bottom: 1.5px solid #bebebe;
+          padding-right: 3rem;
+        }
+      }
+
+      .context {
+        .contextone,
+        .contexttwo,
+        .contextthree,
+        .contextfour,
+        .contextfive,
+        .contextsix,
+        .contextseven {
+          text-align: end;
+          padding-bottom: 0.25rem;
+          margin-bottom: 0.5rem;
+          border-bottom: 1.5px solid #bebebe;
+        }
+      }
+    }
+    .price {
+      text-align: center;
+      font-family: $roboto-slab;
+      font-size: 2rem;
+      text-shadow: 2px 2px 2px #bdbcbc;
+    }
+    .rating {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      color: #ff7373;
+    }
+  }
+}

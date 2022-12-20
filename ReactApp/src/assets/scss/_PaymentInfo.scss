@@ -1,0 +1,49 @@
+#paymentInfo {
+  padding-bottom: 7rem;
+  background-color: #f0f0f0;
+  .paymentInfoContainer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    border-top: 1.5px solid #bebebe;
+    padding: 1.5rem 0rem 0rem 0rem;
+    .customerSupport,
+    .securedPayment,
+    .freeDelivery,
+    .reuters {
+      .customerSupportImage,
+      .securedPaymentImage,
+      .freeDeliveryImage,
+      .reutersImage {
+        .imageContainer {
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+            rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          padding: 0.8rem;
+          border-radius: 100%;
+          background-color: #ffffff;
+          transition: ease-in-out 0.3s;
+          color: #3f3f3f;
+          margin: 0rem 6.25rem 1rem 6.25rem;
+        }
+      }
+      .customerSupportTitle,
+      .securedPaymentTitle,
+      .freeDeliveryTitle,
+      .reutersTitle {
+        font-family: $roboto-slab;
+        text-shadow: 1px 1px 1px #bdbcbc;
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+      }
+      .customerSupportText,
+      .securedPaymentText,
+      .freeDeliveryText,
+      .reutersText {
+        font-size: 0.95rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,549 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Island+Moments&family=Roboto+Slab:wght@300;400;500;600;700;800;900&family=Roboto:wght@500&display=swap");
+@media (min-width: 340px) {
+  .container {
+    max-width: 310px;
+  }
+}
+@media (min-width: 375px) {
+  .container {
+    max-width: 340px;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 476px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 568px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 792px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #2b2a2a;
+}
+
+a {
+  text-decoration: none;
+  transition: all 250ms ease-in-out;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#navBar {
+  background-color: rgba(230, 230, 230, 0.9254901961);
+  padding-top: 0.75rem;
+  height: 65px;
+  border-bottom: 2px solid #dad8d8;
+}
+#navBar .navlink {
+  color: #ff7373;
+  text-decoration: none;
+}
+#navBar .active {
+  color: #838383;
+}
+#navBar .navlink:hover,
+#navBar active:hover {
+  color: #838383;
+  text-decoration: none;
+}
+#navBar .navBarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+}
+#navBar .navBarContainer #logoType {
+  flex-grow: 0.35;
+  font-size: 2rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px #bdbcbc;
+}
+#navBar .navBarContainer #logoType .logoTypeContainer {
+  margin: 0;
+}
+#navBar .navBarContainer #menu {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+#navBar .navBarContainer #menu .menuContainer ul {
+  display: flex;
+  text-align: center;
+}
+#navBar .navBarContainer #menu .menuContainer ul li {
+  list-style: none;
+  padding: 0 1.4rem 0 1.4rem;
+}
+#navBar .navBarContainer #productLinks .productLinksContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+#navBar .navBarContainer #productLinks .productLinksContainer .search,
+#navBar .navBarContainer #productLinks .productLinksContainer .random,
+#navBar .navBarContainer #productLinks .productLinksContainer .like,
+#navBar .navBarContainer #productLinks .productLinksContainer .shoppingCart {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 0.5rem;
+  border-radius: 100%;
+  background-color: #f0f0f0;
+  transition: ease-in-out 0.3s;
+  margin-left: 1rem;
+  color: #3f3f3f;
+}
+#navBar .search:hover,
+#navBar .random:hover,
+#navBar .like:hover,
+#navBar .shoppingCart:hover {
+  cursor: pointer;
+  color: #ff7373 !important;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px !important;
+  transition: ease-in-out 0.3s;
+}
+
+#home {
+  background-color: rgba(230, 230, 230, 0.9254901961);
+  margin-top: -1.5px;
+}
+#home .homeContainer {
+  text-align: center;
+}
+#home .homeContainer #sale {
+  background-color: rgba(230, 230, 230, 0.9254901961);
+  padding-top: 8rem;
+  padding-bottom: 27.2rem;
+  border-bottom: 2px solid #dad8d8;
+}
+#home .homeContainer #sale .salesContainer {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+}
+#home .homeContainer #sale .salesContainer .imagegirl {
+  opacity: 50%;
+  background: url("../images/backgroundgirl.png");
+  position: relative;
+  width: 300px;
+  height: 434px;
+  margin-top: 0.1rem;
+}
+#home .homeContainer #sale .salesContainer .textContainer {
+  width: 400px;
+}
+#home .homeContainer #sale .salesContainer .textContainer .title {
+  text-shadow: 2px 2px 2px rgba(145, 145, 145, 0.9254901961);
+  font-size: 4.2rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  line-height: 4.3rem;
+}
+#home .homeContainer #sale .salesContainer .textContainer .text {
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+#home .homeContainer #sale .salesContainer .imageguy {
+  opacity: 50%;
+  background: url("../images/backgroundguy.png");
+  position: relative;
+  width: 300px;
+  height: 434px;
+  margin-top: 0.1rem;
+}
+
+#featuredProducts {
+  padding-top: 5rem;
+  padding-bottom: 7rem;
+  background-color: #f0f0f0;
+}
+#featuredProducts .featuredProductsContainer {
+  justify-content: center;
+  text-align: center;
+}
+#featuredProducts .featuredProductsContainer .title {
+  text-shadow: 1px 1px 1px #bdbcbc;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+#featuredProducts .featuredProductsContainer .products {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#flashSale02 {
+  padding-bottom: 7rem;
+  background-color: #f0f0f0;
+}
+#flashSale02 .flashSale02Container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+#flashSale02 .flashSale02Container .productSale {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 0.5rem;
+  background: url("../images/shoesbg.png");
+  background-repeat: no-repeat;
+  width: 50%;
+  transition: ease-in-out 0.3s;
+}
+#flashSale02 .flashSale02Container .productSale .title {
+  text-shadow: 4px 4px 3px #5a5a5a;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 4rem;
+  color: white;
+  padding-top: 16.095rem;
+  padding-bottom: 16.095rem;
+}
+#flashSale02 .flashSale02Container .productShoes {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+#flashSale03 {
+  padding-bottom: 7rem;
+  background-color: #f0f0f0;
+}
+#flashSale03 .flashSale03Container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+#flashSale03 .flashSale03Container .productWatches {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+#flashSale03 .flashSale03Container .productSale {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 0.5rem;
+  background: url("../images/watchesbg.png");
+  background-repeat: no-repeat;
+  width: 50%;
+  transition: ease-in-out 0.3s;
+}
+#flashSale03 .flashSale03Container .productSale .title {
+  text-shadow: 4px 4px 3px #5a5a5a;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 4rem;
+  color: white;
+  padding-top: 26.22rem;
+  padding-bottom: 26.22rem;
+}
+#flashSale03 .flashSale03Container .productSale .title .btn {
+  margin: 0;
+}
+
+.sale01:hover,
+.sale02:hover,
+.productSale:hover {
+  margin-top: -1.2rem;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.2509803922) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3019607843) 0px 30px 60px -30px !important;
+  transition: ease-in-out 0.3s;
+}
+
+.card {
+  background-color: rgba(230, 230, 230, 0.9254901961);
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: ease-in-out 0.3s;
+  border-radius: 0.5rem;
+  color: #2b2a2a;
+}
+.card a {
+  text-decoration: none;
+}
+.card a:hover {
+  text-decoration: none;
+}
+.card .img {
+  margin: 0;
+}
+.card .category {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+.card .productName {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+.card .rating {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #ff7373;
+}
+.card .price {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.card:hover {
+  margin-top: -1.2rem;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.2509803922) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3019607843) 0px 30px 60px -30px;
+  transition: ease-in-out 0.3s;
+}
+
+.viewCard {
+  margin-bottom: 5rem;
+  display: flex;
+  background-color: rgba(230, 230, 230, 0.9254901961);
+  padding: 2rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  transition: ease-in-out 0.3s;
+  border-radius: 0.5rem;
+  color: #2b2a2a;
+  gap: 2rem;
+  align-items: center;
+}
+.viewCard .img {
+  margin: 0;
+}
+.viewCard .content .articleNumber {
+  text-align: center;
+  font-size: 0.85rem;
+}
+.viewCard .content .brandName {
+  text-align: center;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 2.7rem;
+  text-shadow: 2px 2px 2px #bdbcbc;
+}
+.viewCard .content .productName {
+  text-align: center;
+  margin-top: 0.2rem;
+  margin-bottom: 1.5rem;
+}
+.viewCard .content .shortDescription {
+  text-align: center;
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+.viewCard .content .details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+.viewCard .content .details .item {
+  font-weight: 600;
+}
+.viewCard .content .details .item .one,
+.viewCard .content .details .item .two,
+.viewCard .content .details .item .three,
+.viewCard .content .details .item .four,
+.viewCard .content .details .item .five,
+.viewCard .content .details .item .six,
+.viewCard .content .details .item .seven {
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1.5px solid #bebebe;
+  padding-right: 3rem;
+}
+.viewCard .content .details .context .contextone,
+.viewCard .content .details .context .contexttwo,
+.viewCard .content .details .context .contextthree,
+.viewCard .content .details .context .contextfour,
+.viewCard .content .details .context .contextfive,
+.viewCard .content .details .context .contextsix,
+.viewCard .content .details .context .contextseven {
+  text-align: end;
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1.5px solid #bebebe;
+}
+.viewCard .content .price {
+  text-align: center;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 2rem;
+  text-shadow: 2px 2px 2px #bdbcbc;
+}
+.viewCard .content .rating {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #ff7373;
+}
+
+#paymentInfo {
+  padding-bottom: 7rem;
+  background-color: #f0f0f0;
+}
+#paymentInfo .paymentInfoContainer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  border-top: 1.5px solid #bebebe;
+  padding: 1.5rem 0rem 0rem 0rem;
+}
+#paymentInfo .paymentInfoContainer .customerSupport .customerSupportImage .imageContainer,
+#paymentInfo .paymentInfoContainer .customerSupport .securedPaymentImage .imageContainer,
+#paymentInfo .paymentInfoContainer .customerSupport .freeDeliveryImage .imageContainer,
+#paymentInfo .paymentInfoContainer .customerSupport .reutersImage .imageContainer,
+#paymentInfo .paymentInfoContainer .securedPayment .customerSupportImage .imageContainer,
+#paymentInfo .paymentInfoContainer .securedPayment .securedPaymentImage .imageContainer,
+#paymentInfo .paymentInfoContainer .securedPayment .freeDeliveryImage .imageContainer,
+#paymentInfo .paymentInfoContainer .securedPayment .reutersImage .imageContainer,
+#paymentInfo .paymentInfoContainer .freeDelivery .customerSupportImage .imageContainer,
+#paymentInfo .paymentInfoContainer .freeDelivery .securedPaymentImage .imageContainer,
+#paymentInfo .paymentInfoContainer .freeDelivery .freeDeliveryImage .imageContainer,
+#paymentInfo .paymentInfoContainer .freeDelivery .reutersImage .imageContainer,
+#paymentInfo .paymentInfoContainer .reuters .customerSupportImage .imageContainer,
+#paymentInfo .paymentInfoContainer .reuters .securedPaymentImage .imageContainer,
+#paymentInfo .paymentInfoContainer .reuters .freeDeliveryImage .imageContainer,
+#paymentInfo .paymentInfoContainer .reuters .reutersImage .imageContainer {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 0.8rem;
+  border-radius: 100%;
+  background-color: #ffffff;
+  transition: ease-in-out 0.3s;
+  color: #3f3f3f;
+  margin: 0rem 6.25rem 1rem 6.25rem;
+}
+#paymentInfo .paymentInfoContainer .customerSupport .customerSupportTitle,
+#paymentInfo .paymentInfoContainer .customerSupport .securedPaymentTitle,
+#paymentInfo .paymentInfoContainer .customerSupport .freeDeliveryTitle,
+#paymentInfo .paymentInfoContainer .customerSupport .reutersTitle,
+#paymentInfo .paymentInfoContainer .securedPayment .customerSupportTitle,
+#paymentInfo .paymentInfoContainer .securedPayment .securedPaymentTitle,
+#paymentInfo .paymentInfoContainer .securedPayment .freeDeliveryTitle,
+#paymentInfo .paymentInfoContainer .securedPayment .reutersTitle,
+#paymentInfo .paymentInfoContainer .freeDelivery .customerSupportTitle,
+#paymentInfo .paymentInfoContainer .freeDelivery .securedPaymentTitle,
+#paymentInfo .paymentInfoContainer .freeDelivery .freeDeliveryTitle,
+#paymentInfo .paymentInfoContainer .freeDelivery .reutersTitle,
+#paymentInfo .paymentInfoContainer .reuters .customerSupportTitle,
+#paymentInfo .paymentInfoContainer .reuters .securedPaymentTitle,
+#paymentInfo .paymentInfoContainer .reuters .freeDeliveryTitle,
+#paymentInfo .paymentInfoContainer .reuters .reutersTitle {
+  font-family: "Roboto Slab", sans-serif;
+  text-shadow: 1px 1px 1px #bdbcbc;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+#paymentInfo .paymentInfoContainer .customerSupport .customerSupportText,
+#paymentInfo .paymentInfoContainer .customerSupport .securedPaymentText,
+#paymentInfo .paymentInfoContainer .customerSupport .freeDeliveryText,
+#paymentInfo .paymentInfoContainer .customerSupport .reutersText,
+#paymentInfo .paymentInfoContainer .securedPayment .customerSupportText,
+#paymentInfo .paymentInfoContainer .securedPayment .securedPaymentText,
+#paymentInfo .paymentInfoContainer .securedPayment .freeDeliveryText,
+#paymentInfo .paymentInfoContainer .securedPayment .reutersText,
+#paymentInfo .paymentInfoContainer .freeDelivery .customerSupportText,
+#paymentInfo .paymentInfoContainer .freeDelivery .securedPaymentText,
+#paymentInfo .paymentInfoContainer .freeDelivery .freeDeliveryText,
+#paymentInfo .paymentInfoContainer .freeDelivery .reutersText,
+#paymentInfo .paymentInfoContainer .reuters .customerSupportText,
+#paymentInfo .paymentInfoContainer .reuters .securedPaymentText,
+#paymentInfo .paymentInfoContainer .reuters .freeDeliveryText,
+#paymentInfo .paymentInfoContainer .reuters .reutersText {
+  font-size: 0.95rem;
+}
+
+#footer {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  background-color: rgba(230, 230, 230, 0.9254901961);
+  border-top: 2px solid #dad8d8;
+  height: 100px;
+}
+#footer .footerContainer {
+  padding: 1rem;
+  text-align: center;
+}
+#footer .footerContainer .socialmedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer .footerContainer .socialmedia .facebook,
+#footer .footerContainer .socialmedia .instagram,
+#footer .footerContainer .socialmedia .twitter,
+#footer .footerContainer .socialmedia .google,
+#footer .footerContainer .socialmedia .linkedin {
+  padding: 0 0.5rem 0 0.5rem;
+  transition: ease-in-out 0.3s;
+}
+#footer .footerContainer .footerText {
+  margin-top: 1.2rem;
+  font-size: 0.95rem;
+}
+
+.facebook:hover,
+.instagram:hover,
+.twitter:hover,
+.google:hover,
+.linkedin:hover {
+  cursor: pointer;
+  color: #ff7373 !important;
+  transition: ease-in-out 0.3s;
+}
+
+#views {
+  min-height: calc(100vh - 325px);
+  justify-content: center;
+  display: flex;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+#views .viewsContainer {
+  min-width: 680px;
+  display: flex;
+}
+#views .viewsContainer .categoriesContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#views .viewsContainer .categoriesContainer .category {
+  text-align: center;
+}/*# sourceMappingURL=Style.css.map */

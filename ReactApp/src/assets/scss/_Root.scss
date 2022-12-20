@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Island+Moments&family=Roboto+Slab:wght@300;400;500;600;700;800;900&family=Roboto:wght@500&display=swap");
+@import "./Variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family: $roboto;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #2b2a2a;
+}
+
+a {
+  text-decoration: none;
+  transition: all 250ms ease-in-out;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}

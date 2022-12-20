@@ -1,0 +1,83 @@
+#navBar {
+  background-color: #e6e6e6ec;
+  padding-top: 0.75rem;
+  height: 65px;
+  border-bottom: 2px solid #dad8d8;
+
+  .navlink {
+    color: #ff7373;
+    text-decoration: none;
+  }
+
+  .active {
+    color: #838383;
+  }
+
+  .navlink:hover,
+  active:hover {
+    color: #838383;;
+    text-decoration: none;
+  }
+
+  .navBarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:sticky;
+    #logoType {
+      flex-grow: 0.35;
+      font-size: 2rem;
+      font-weight: 600;
+      text-shadow: 2px 2px 2px #bdbcbc;
+      .logoTypeContainer {
+        margin: 0;
+      }
+    }
+
+    #menu {
+      font-family: $roboto-slab;
+      font-weight: 600;
+      font-size: 0.95rem;
+      .menuContainer {
+        ul {
+          display: flex;
+          text-align: center;
+          li {
+            list-style: none;
+            padding: 0 1.4rem 0 1.4rem;
+          }
+        }
+      }
+    }
+
+    #productLinks {
+      .productLinksContainer {
+        display: flex;
+        justify-content: flex-end;
+        .search,
+        .random,
+        .like,
+        .shoppingCart {
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+            rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          padding: 0.5rem;
+          border-radius: 100%;
+          background-color: #f0f0f0;
+          transition: ease-in-out 0.3s;
+          margin-left: 1rem;
+          color: #3f3f3f;
+        }
+      }
+    }
+  }
+  .search:hover,
+  .random:hover,
+  .like:hover,
+  .shoppingCart:hover {
+    cursor: pointer;
+    color: #ff7373 !important;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px !important;
+    transition: ease-in-out 0.3s;
+  }
+}

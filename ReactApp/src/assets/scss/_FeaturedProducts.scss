@@ -1,0 +1,23 @@
+#featuredProducts {
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+    background-color: #f0f0f0;
+    .featuredProductsContainer {
+      justify-content: center;
+      text-align: center;
+
+      .title {
+        text-shadow: 1px 1px 1px #bdbcbc;
+        font-family: $roboto-slab;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding-bottom: 2rem;
+      }
+
+      .products {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
